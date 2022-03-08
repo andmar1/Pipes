@@ -13,6 +13,8 @@ export class AppComponent {
   obj = {
     nombre:'pepe'
   }
+  
+  title:string = "introduccion";
 
   mostrarNombre(){
     console.log( this.nombre )
