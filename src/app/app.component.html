@@ -1,1 +1,9 @@
-<h1> {{ 'Hola perra' | slice  }} </h1>
+<h1> {{ nombre | uppercase  }} </h1>
+<h1> {{ valor | currency  }} </h1>
+<h1> {{ obj | json }}</h1>
+<h2>{{ obj.nombre| uppercase}}</h2>
+
+
+<button (click)="mostrarNombre()">
+    Cambiar nombre
+</button>
