@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 // importaciones externas, modulos personalizados
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
+import { AppRouterModule } from './app-router.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     PrimeNgModule,
-    SharedModule
+    SharedModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
