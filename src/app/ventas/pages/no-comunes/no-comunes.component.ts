@@ -26,7 +26,20 @@ export class NoComunesComponent {
     '=2':'tenemos dos clientes esperando.',
     'other':`tenemos # clientes esperando`    
   }
+ 
+  cambiarCliente(){
+    this.nombre = "Melisa";
+    this.genero = "femenino"
+  }
+
+  borrarCliente(){
+    this.clientes.pop()
+  }
   
+
+
+
+
   // otra forma de contar elementos del array en opcion other
   // clientesMapa = {
   //   '=0':'no tenemos ningun cliente esperando.',
