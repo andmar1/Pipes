@@ -1,5 +1,6 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from  '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
@@ -27,7 +28,8 @@ registerLocaleData( localesFr ); //registrar idioma frances
     PrimeNgModule,
     SharedModule,
     AppRouterModule,
-    VentasModule
+    VentasModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-MX' }
