@@ -35,11 +35,14 @@ export class NoComunesComponent {
   borrarCliente(){
     this.clientes.pop()
   }
+
+  // KeyValuePipe 
+  persona = {
+    nombre:"Antonio",
+    edad:24,
+    direccion:"Guanajuato, Mexico"
+  }
   
-
-
-
-
   // otra forma de contar elementos del array en opcion other
   // clientesMapa = {
   //   '=0':'no tenemos ningun cliente esperando.',
@@ -47,6 +50,5 @@ export class NoComunesComponent {
   //   '=2':'tenemos dos clientes esperando.',
   //   'other':`tenemos ${this.clientes.length} clientes esperando`    
   // }
-
 
 }
