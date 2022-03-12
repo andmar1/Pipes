@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -62,6 +63,15 @@ export class NoComunesComponent {
       vuela:false
     },
   ]
+
+  // Async pipe
+  miObservable = interval(2000); //0,1,2,3,4,5
+
+  valorPromesa = new Promise((resolve,reject)=>{
+    setTimeout(() => {
+      resolve("Tenemos data de promesa");
+    }, 3500);
+  });
   
   // otra forma de contar elementos del array en opcion other
   // clientesMapa = {
