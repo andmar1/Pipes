@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoComunesComponent {
 
+  // i18nSelect 
   nombre:string = "Antonio";
   genero:string = "masculino";
 
@@ -15,5 +16,24 @@ export class NoComunesComponent {
     'masculino':'invitarlo',
     'femenino':'invitarla'
   }
+
+  // i18nPlural
+  clientes:string[] = ['Maria','Juan','Fernando','Felipe'];
+
+  clientesMapa = {
+    '=0':'no tenemos ningun cliente esperando.',
+    '=1':'tenemos un cliente esperando.',
+    '=2':'tenemos dos clientes esperando.',
+    'other':`tenemos # clientes esperando`    
+  }
+  
+  // otra forma de contar elementos del array en opcion other
+  // clientesMapa = {
+  //   '=0':'no tenemos ningun cliente esperando.',
+  //   '=1':'tenemos un cliente esperando.',
+  //   '=2':'tenemos dos clientes esperando.',
+  //   'other':`tenemos ${this.clientes.length} clientes esperando`    
+  // }
+
 
 }
