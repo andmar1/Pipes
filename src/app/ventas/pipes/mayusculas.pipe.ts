@@ -14,6 +14,4 @@ export class MayusculasPipe implements PipeTransform{
         // Misma operacion con operador ternario
         // return (enMayusculas) ? valor.toUpperCase():valor.toLocaleLowerCase();
     }
-
-
 }

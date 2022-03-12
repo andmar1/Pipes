@@ -2,11 +2,58 @@
     <h1>Pipes personalizados</h1>
     <p>Pipes creados por {{ 'jose' | mayusculas:enMayusculas }} </p>
 
-    <button pButton type="button" 
-        label="toggle Mayusculas" 
-        class="p-button-success p-button-raised p-button-rounded"
-        (click)="cambiar()"
-        >
-    </button>                
+</div>
+<br>
+<p-toolbar>
+                   
+    <div class="p-toolbar-group-left">
+    </div>
+    
+    <div class="p-toolbar-group-right">
 
+        <button pButton type="button" 
+                label="toggle Mayusculas" 
+                class="p-mr-1 p-button-warning"
+                (click)="cambiar()"
+                ></button>
+
+        <button pButton
+                icon = "pi pi-sort"
+                label = "Por nombre"
+                class="p-mr-1"
+                ></button>
+
+        <button pButton
+                icon = "pi pi-sort"
+                label = "Valores"
+                class="p-mr-1 p-button-success"
+                ></button>
+        
+        <button pButton
+                icon = "pi pi-sort"
+                label = "Por color"
+                class="p-mr-1 p-button-help"
+                ></button>
+    </div>
+</p-toolbar>
+
+<div class="p-grid">
+    <p-table class="p-col p-mt-2" [value]="[]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Vin</th>
+                <th>Year</th>
+                <th>Brand</th>
+                <th>Color</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-car>
+            <tr>
+                <td>{{car.vin}}</td>
+                <td>{{car.year}}</td>
+                <td>{{car.brand}}</td>
+                <td>{{car.color}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
 </div>
