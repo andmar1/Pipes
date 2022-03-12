@@ -12,5 +12,4 @@ export class NoComunesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
