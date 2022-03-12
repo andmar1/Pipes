@@ -31,7 +31,7 @@ export class NoComunesComponent {
     this.nombre = "Melisa";
     this.genero = "femenino"
   }
-
+  
   borrarCliente(){
     this.clientes.pop()
   }
