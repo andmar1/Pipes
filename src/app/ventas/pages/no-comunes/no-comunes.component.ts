@@ -42,6 +42,26 @@ export class NoComunesComponent {
     edad:24,
     direccion:"Guanajuato, Mexico"
   }
+
+  // Json pipe 
+  heroes = [
+    {
+      nombre:"superman",
+      vuela:true
+    },
+    {
+      nombre:"robin",
+      vuela:false
+    },
+    {
+      nombre:"iron man",
+      vuela:true
+    },
+    {
+      nombre:"spider man",
+      vuela:false
+    },
+  ]
   
   // otra forma de contar elementos del array en opcion other
   // clientesMapa = {
