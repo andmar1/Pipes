@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ordenar',
@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class OrdenarComponent  {
+export class OrdenarComponent implements OnInit {
 
-  nombre= "Antonio"
+  enMayusculas:boolean = true;
 
   constructor() { }
 
+  ngOnInit(): void {
+  }
+
+  cambiar(){
+    this.enMayusculas = !this.enMayusculas;
+  }
 
 }
