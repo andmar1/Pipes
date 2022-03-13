@@ -45,4 +45,6 @@ export class OrdenarComponent  {
     this.enMayusculas = !this.enMayusculas;
   }
 
+  vuela:boolean = true;
+
 }
